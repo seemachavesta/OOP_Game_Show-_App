@@ -6,6 +6,7 @@ class Phrase{
     constructor(phrase){
         this.phrase = phrase.toLowerCase();
     }
+    // display phrase on screen;
    addPhraseToDisplay(){
        const phrase = document.querySelector('#phrase')
        const ul = phrase.firstElementChild;
