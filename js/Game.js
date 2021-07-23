@@ -83,7 +83,7 @@ class Game{
         if(this.missed < imgs.length){
             imgs[this.missed].src = "images/lostHeart.png" ;
         }else{
-            game.gameOver(this.checkForWin());
+            this.gameOver(false);
         }  
         
     }

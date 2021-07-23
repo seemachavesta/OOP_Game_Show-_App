@@ -4,11 +4,12 @@
 
 
 
-const game = new Game();
+let game = new Game();
 
 const startButton = document.querySelector(`#btn__reset`);
 // listen click event on start button;
 startButton.addEventListener('click', () => {
+     game = new Game();
      game.startGame();   
 }
 )
@@ -37,7 +38,7 @@ document.addEventListener('keydown', e => {
         keys.forEach((key) => {
         if(key.textContent === letter){
             game.handleInteraction(key, letter)
-           
+            
         }
       
          })
